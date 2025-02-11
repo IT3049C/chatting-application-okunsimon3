@@ -1,5 +1,3 @@
-// const { text } = require("stream/consumers");
-
 const nameInput = document.getElementById(`my-name-input`);
 const myMessage = document.getElementById(`my-message-input`);
 const sendButton = document.getElementById(`send-button`);
@@ -49,7 +47,7 @@ sendButton.addEventListener("click", function(event) {
   const message= myMessage.value;
   sendMessages(sender, message);
   myMessage.value = "";
-})
+});
 
 
 const MILLISECONDS_IN_TEN_SECONDS = 10000;
